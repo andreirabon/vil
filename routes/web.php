@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\CarController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
@@ -11,5 +12,8 @@ Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-require __DIR__.'/settings.php';
-require __DIR__.'/auth.php';
+Route::get('/cars/invoke', CarController::class)->name('cars');
+Route::get('/cars', [CarController::class, 'index'])->name('cars');
+
+require __DIR__ . '/settings.php';
+require __DIR__ . '/auth.php';
