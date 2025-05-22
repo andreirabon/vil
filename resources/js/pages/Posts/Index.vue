@@ -37,8 +37,8 @@ const breadcrumbs: BreadcrumbItem[] = [
                     <tbody>
                         <tr class="border-b border-gray-200 odd:bg-gray-100 even:bg-white">
                             <td class="px-4 py-2">1</td>
-                            <td class="px-4 py-2">Example Title</td>
-                            <td class="px-4 py-2">Example body content.</td>
+                            <td class="px-4 py-2">Example Titles</td>
+                            <td class="px-4 py-2">Example body contents.</td>
                             <td class="flex items-center space-x-2 px-4 py-2">
                                 <button
                                     class="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-3 py-1 text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none"
